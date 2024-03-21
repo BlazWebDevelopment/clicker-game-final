@@ -25,11 +25,11 @@ function ProjectsShow() {
             </div>
             <div className="flex gap-10 max-sm:flex-col">
               <ProgressBar label={"React Native"} value={70} />
-              <ProgressBar label={"React"} value={100} />
+              <ProgressBar label={"JavaScript"} value={100} />
             </div>
             <div className="flex gap-10 max-sm:flex-col">
-              <ProgressBar label={"TwilwindCSS"} value={100} />
-              <ProgressBar label={"PostgreSQL"} value={50} />
+              <ProgressBar label={"TailwindCSS"} value={100} />
+              <ProgressBar label={"PostgreSQL"} value={40} />
             </div>
             <div className="flex gap-10 max-sm:flex-col">
               <ProgressBar label={"Teamwork"} value={100} />
