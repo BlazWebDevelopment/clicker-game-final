@@ -14,11 +14,21 @@ export function ContactForm({ register }) {
   return (
     <div className="mx-auto mt-20 w-full max-w-md rounded-none bg-black p-4  shadow-input max-sm:max-w-[350px]  md:rounded-2xl md:p-8 lg:min-w-[600px]">
       <h2 className="text-xl font-bold  text-neutral-200">Send me a message</h2>
-      <p className="mt-2 max-w-sm text-sm  text-neutral-300">
+      {/* <p className="mt-2 max-w-sm text-sm  text-neutral-300">
         If you want to work with me or have a job for me, feel free to send me a
         message. I will answer as quick as possible.
+      </p> */}
+      <p className="mt-2 max-w-sm text-sm text-neutral-300">
+        The contact form is currently under construction due to domain
+        verification issues. In the meantime, you can reach me via email by
+        clicking the link below:
+        <a
+          href="mailto:dezmanblaz1@gmail.com"
+          className="mt-1 inline-block text-xl text-blue-400 hover:text-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50"
+        >
+          dezmanblaz1@gmail.com
+        </a>
       </p>
-
       <Form method="POST" className="my-8" noValidate>
         <div className="mb-4 flex flex-col space-y-2 md:flex-row md:space-x-2 md:space-y-0">
           <LabelInputContainer>
@@ -60,7 +70,8 @@ export function ContactForm({ register }) {
 
         <button
           className="group/btn relative block h-10 w-full rounded-md bg-zinc-800  bg-gradient-to-br from-zinc-900 to-zinc-900 font-medium text-white shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
-          type="submit"
+          // type="submit"
+          unselectable="on"
         >
           Send message &rarr;
           <BottomGradient />
