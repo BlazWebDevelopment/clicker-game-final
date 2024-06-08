@@ -75,31 +75,18 @@
   }
 }
 
-@keyframes popIn {
+.clicked {
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+@keyframes jump {
   0% {
-    transform: scale(0.5);
-    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
-    opacity: 1;
   }
-}
-
-@keyframes popOut {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-}
-.popIn {
-  animation: popIn 0.3s ease-out forwards;
-}
-
-.popOut {
-  animation: popOut 0.3s ease-in forwards;
 }
